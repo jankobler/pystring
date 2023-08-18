@@ -20,3 +20,5 @@ install(TARGETS pystring
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
 )
 
+set_target_properties(pystring PROPERTIES PUBLIC_HEADER pystring.h)
+install(TARGETS pystring PUBLIC_HEADER DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/pystring")
